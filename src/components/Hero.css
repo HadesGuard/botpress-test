@@ -1,0 +1,148 @@
+/* Aviation Hero Section */
+.hero-aviation-bg {
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 80%, #2980b9 100%);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.hero-container-aviation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem 2rem;
+  z-index: 2;
+}
+
+.hero-content-aviation {
+  flex: 1;
+  z-index: 2;
+}
+
+.aviation-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #ffd700;
+  text-shadow: 0 2px 8px rgba(44,83,100,0.2);
+}
+
+.aviation-title i {
+  color: #fff;
+  background: #2980b9;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  box-shadow: 0 2px 8px rgba(44,83,100,0.15);
+}
+
+.aviation-slogan {
+  font-size: 1.5rem;
+  margin: 1.2rem 0 2.2rem 0;
+  color: #e0eafc;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.btn-aviation {
+  background: #ffd700;
+  color: #0f2027;
+  border-radius: 30px;
+  padding: 0.75rem 2.2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 12px rgba(44,83,100,0.18);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.btn-aviation:hover {
+  background: #ffb300;
+  color: #fff;
+}
+
+.hero-plane-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 300px;
+  min-height: 220px;
+}
+.hero-plane-img img {
+  width: 350px;
+  max-width: 100%;
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.18));
+  z-index: 2;
+}
+.fallback-plane-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0.25;
+  z-index: 1;
+}
+
+/* Clouds */
+.aviation-cloud {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.18;
+  z-index: 1;
+}
+.cloud1 {
+  width: 180px;
+  height: 60px;
+  top: 60px;
+  left: 10vw;
+  filter: blur(2px);
+}
+.cloud2 {
+  width: 120px;
+  height: 40px;
+  bottom: 80px;
+  right: 12vw;
+  filter: blur(1.5px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-container-aviation {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .hero-plane-img {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .aviation-title {
+    font-size: 2rem;
+  }
+  .aviation-slogan {
+    font-size: 1.1rem;
+  }
+  .hero-plane-img img {
+    width: 220px;
+  }
+} 
