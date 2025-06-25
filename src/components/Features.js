@@ -4,41 +4,41 @@ import './Features.css';
 const Features = () => {
   const features = [
     {
-      icon: 'fas fa-clock',
-      title: '24/7 Availability',
-      description: 'Get instant responses anytime, day or night. No waiting, no delays.'
+      icon: 'fas fa-couch',
+      title: 'Luxury Interiors',
+      description: 'Relax in spacious, elegant cabins with premium amenities.'
     },
     {
-      icon: 'fas fa-brain',
-      title: 'AI-Powered',
-      description: 'Advanced machine learning for intelligent, contextual conversations.'
+      icon: 'fas fa-plane-departure',
+      title: 'On-demand Flights',
+      description: 'Fly on your schedule, to any destination worldwide.'
+    },
+    {
+      icon: 'fas fa-user-tie',
+      title: 'Personalized Concierge',
+      description: 'Enjoy tailored services from booking to landing.'
     },
     {
       icon: 'fas fa-globe',
-      title: 'Multi-Language',
-      description: 'Support for multiple languages to serve global customers.'
-    },
-    {
-      icon: 'fas fa-chart-line',
-      title: 'Analytics',
-      description: 'Detailed insights into customer interactions and satisfaction.'
+      title: 'Global Destinations',
+      description: 'Access exclusive airports and private terminals globally.'
     },
     {
       icon: 'fas fa-shield-alt',
-      title: 'Secure',
-      description: 'Enterprise-grade security to protect your data and conversations.'
+      title: 'Safety & Privacy',
+      description: 'Your safety and privacy are our top priorities.'
     },
     {
-      icon: 'fas fa-cogs',
-      title: 'Easy Integration',
-      description: 'Simple setup and integration with your existing systems.'
+      icon: 'fas fa-mobile-alt',
+      title: 'Seamless Booking',
+      description: 'Book your flight easily with our intuitive platform.'
     }
   ];
 
   return (
     <section id="features" className="features">
       <div className="container">
-        <h2>Why Choose Our ChatBot?</h2>
+        <h2>Why Fly With Us?</h2>
         <div className="features-grid">
           {features.map((feature, index) => (
             <div key={index} className="feature-card">
